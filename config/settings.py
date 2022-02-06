@@ -25,11 +25,10 @@ SECRET_KEY = 'b#s*_o(3t3ai_k(c5po@h7a=nj5#vjkd3u7ckhnx@)mi=8fn67'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['airbnbnew.eba-ewscepnv.ap-northeast-2.elasticbeanstalk.com']
 
 
 # Application definition
-
 
 
 DJANGO_APPS = [
@@ -42,21 +41,21 @@ DJANGO_APPS = [
 ]
 
 PROJECT_APPS = [
-  "core.apps.CoreConfig",
-  "users.apps.UsersConfig",
-  "books.apps.BooksConfig",
-  "categories.apps.CategoriesConfig",
-  "favs.apps.FavsConfig",
-  "movies.apps.MoviesConfig",
-  "people.apps.PeopleConfig",
-  "reviews.apps.ReviewsConfig"
+    "core.apps.CoreConfig",
+    "users.apps.UsersConfig",
+    "books.apps.BooksConfig",
+    "categories.apps.CategoriesConfig",
+    "favs.apps.FavsConfig",
+    "movies.apps.MoviesConfig",
+    "people.apps.PeopleConfig",
+    "reviews.apps.ReviewsConfig"
 ]
 
 THIRD_PARTY_APPS = [
-  "django_seed",
+    "django_seed",
 ]
 
-INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS 
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -139,7 +138,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 ALLOWED_HOSTS = ['*']
 X_FRAME_OPTIONS = '*'
-
 
 
 AUTH_USER_MODEL = "users.User"
